@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <script src="script.js" defer></script>
+    <link href="https://db.onlinewebfonts.com/c/84cb021d5f9af287ffff84b61beef6dc?family=clockicons" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #000000;
+        }
+        p{
+            font-family: clockicons,sans-serif;
+            font-size: 200px;
+            color: #ff9500;
+        }
+        .container{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 150px;
+        }
+        button{
+            margin-top: 20px;
+            padding: 25px 50px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        #editTime{
+            background-color: #0090dd;
+        }
+        #reset{
+            background-color: #fbad10;
+        }
+        #start{
+            background-color: #4aae71;
+        }
+        #stop{
+            background-color: #ef6262;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>
+                <span id="second">00</span>:
+                <span id="tens">00</span>
+            </p>
+        </div>
+
+       <div>
+        <button id="editTime">Edit Timer</button>
+        <button id="reset">Reset</button>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+       </div>
+    </div>
+</body>
+</html>
